@@ -1,0 +1,35 @@
+body {
+    font-family: 'Roboto';
+    display: flex;
+    justify-content: center;
+
+    .filter {
+        width: 1024px;
+        color: #FFFFFF;
+        border-radius: 6px;
+        background-color: #F8F8F8;
+
+        .filter__title {
+            padding: 10px 0 12px 20px;
+            background-color: #0F74D1;
+
+            .filter__arrow_up {
+                transform: rotate(180deg);
+            }
+
+        }
+
+        .filter__min-filter {
+            background-color: #F8F8F8;
+            color: #222222;
+            margin-bottom: 22px;
+
+            .filter__groupparams {
+                margin: 20px 14px;
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+
+    }
+}
