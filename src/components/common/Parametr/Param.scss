@@ -2,11 +2,21 @@
     position: relative;
     width: 166px;
     cursor: pointer;
-    margin-bottom: 40px;
 
     .param__title {
         display: flex;
         justify-content: space-between;
+
+        .param__title_text {
+            width: 100px;
+            line-height: 130%;
+        }
+        .param__icon{
+            opacity: 0;
+        }
+        .param__icon_visible{
+            opacity: 1;
+        }
     }
 
     .param__options-wrapper {
@@ -21,7 +31,6 @@
         position: absolute;
         top: 22px;
         opacity: 0;
-        z-index: -100;
 
         .param__options {
             overflow: auto;

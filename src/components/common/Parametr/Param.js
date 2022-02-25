@@ -1,6 +1,5 @@
 import Option from './Option/Option.js'
 import './Param.scss';
-import Slider from '../Slider/Slider.js';
 
 const Param = {
     create(title, options) {
@@ -47,6 +46,9 @@ const Param = {
         
         
         paramTitle.addEventListener('click', function(e){
+            let visibleIcon = document.querySelector('.param__icon_visible') 
+            visibleIcon?.classList.remove('param__icon_visible')
+            paramIcon.classList.add('param__icon_visible')
             let activeElement = document.querySelector('.param_active') 
             activeElement?.classList.remove('param_active')
             let paramOptions = document.querySelector('.param__options-wrapper_visible')

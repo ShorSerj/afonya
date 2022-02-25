@@ -1,5 +1,5 @@
-const GetParams = {
-    getMinParams(title) {
+const getParams = {
+    getParams(title) {
         let promise = new Promise(function (resolve, reject) {
             const xhr = new XMLHttpRequest()
             xhr.open('GET', `https://afternoon-mesa-71443.herokuapp.com/${title}`)
@@ -23,5 +23,5 @@ const GetParams = {
     }
 }
 export {
-    GetParams
+    getParams
 }
