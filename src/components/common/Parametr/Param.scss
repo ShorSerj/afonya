@@ -3,6 +3,11 @@
     width: 166px;
     cursor: pointer;
 
+    @media (max-width: 1000px) {
+        justify-self: center;
+        margin: 0;
+    }
+
     .param__title {
         display: flex;
         justify-content: space-between;
@@ -11,10 +16,12 @@
             width: 100px;
             line-height: 130%;
         }
-        .param__icon{
+
+        .param__icon {
             opacity: 0;
         }
-        .param__icon_visible{
+
+        .param__icon_visible {
             opacity: 1;
         }
     }

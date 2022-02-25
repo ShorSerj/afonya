@@ -22,7 +22,6 @@ const Param = {
 
         const paramOptions = document.createElement("ul")
         paramOptions.classList.add("param__options")
-
         options.forEach((item) => {
             paramOptions.append(Option.create(item))
         })
@@ -46,20 +45,26 @@ const Param = {
         
         
         paramTitle.addEventListener('click', function(e){
-            let visibleIcon = document.querySelector('.param__icon_visible') 
-            visibleIcon?.classList.remove('param__icon_visible')
-            paramIcon.classList.add('param__icon_visible')
-            let activeElement = document.querySelector('.param_active') 
-            activeElement?.classList.remove('param_active')
-            let paramOptions = document.querySelector('.param__options-wrapper_visible')
+            // document.querySelector('.param__options-wrapper_visible')?.classList.remove('param__options-wrapper_visible')
+            // document.querySelector('.param__icon_visible')?.classList.remove('param__icon_visible') 
+            console.log('2')
+            paramOptionsWrapper.classList.toggle('param__options-wrapper_visible')
+            paramIcon.classList.toggle('param__icon_visible')
+
+            
+            // visibleIcon?
+            
+            // let activeElement = document.querySelector('.param_active') 
+            // activeElement?.classList.remove('param_active')
+            // let paramOptions = document.querySelector('.param__options-wrapper_visible')
     
-            paramOptions?.classList.remove('param__options-wrapper_visible')
-            activeElement?.classList.remove('param_active')
+            // paramOptions?.classList.remove('param__options-wrapper_visible')
+            // activeElement?.classList.remove('param_active')
     
-            if(!activeElement?.contains(e.target)){ 
-                paramElement.querySelector('.param__options-wrapper').classList.add('param__options-wrapper_visible')
-                paramElement.classList.add('param_active')
-            }     
+            // if(!activeElement?.contains(e.target)){ 
+                // paramElement.querySelector('.param__options-wrapper').classList.add('param__options-wrapper_visible')
+                // paramElement.classList.add('param_active')
+            // }     
         })
 
         return paramElement
