@@ -32,7 +32,6 @@ filter.addEventListener('click', function(){
 })
 
 document.addEventListener('click', function(event){
-    console.log('1')
     let activeElements = document.querySelectorAll('.param__options-wrapper_visible')
     activeElements?.forEach(item => {
         if(item.closest('.param') !== event.target.closest('.param')){
@@ -45,9 +44,9 @@ document.addEventListener('click', function(event){
 
 toggleFilter.addEventListener('click', function(){
     maxFilter.classList.toggle('filter__max-filter_visible')
-    toggleFilter.classList.toggle('more__max')
+    toggleFilter.classList.toggle('filter__more-max')
 
-    if(toggleFilter.className == 'filter__more more__max'){
+    if(toggleFilter.className == 'filter__more filter__more-max'){
         toggleFilter.innerHTML = 'Показать меньше параметров (12)'
     }else{
         toggleFilter.innerHTML = 'Показать больше параметров (12)'

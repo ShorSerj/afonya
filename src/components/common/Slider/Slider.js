@@ -10,7 +10,7 @@ const Slider = {
         paramTitle.classList.add("param__title")
 
         const paramTitleText = document.createElement("div")
-        paramTitleText.classList.add("param__title_text")
+        paramTitleText.classList.add("param__title-text")
         paramTitleText.innerHTML = title
         
         const sliderWrapper = document.createElement("div")

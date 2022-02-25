@@ -1,7 +1,6 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 
 let mode = 'development';
@@ -25,10 +24,6 @@ const plugins = [
     }]
   }),
 ];
-
-if (process.env.SERVE) {
-  plugins.push(new ReactRefreshWebpackPlugin());
-}
 
 module.exports = {
   mode,
@@ -66,17 +61,7 @@ module.exports = {
       {
         test: /\.(woff2?|eot|ttf|otf)$/i,
         type: 'asset/resource',
-      },
-      {
-        test: /\.jsx?$/,
-        exclude: /node_modules/,
-        use: {
-          loader: 'babel-loader',
-          options: {
-            cacheDirectory: true,
-          },
-        },
-      },
+      }
     ],
   },
 };
