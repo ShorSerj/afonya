@@ -37,8 +37,10 @@ document.addEventListener('click', function(event){
         if(item.closest('.param') !== event.target.closest('.param')){
             item.classList.remove('param__options-wrapper_visible')
             item.closest('.param').querySelector('.param__icon_visible').classList.remove('param__icon_visible')
+            item.closest('.param').querySelector('.param__title').classList.remove('param__title_active')
+        }else{
+            item.closest('.param').querySelector('.param__title').classList.add('param__title_active')
         }
-
     })
 })
 
