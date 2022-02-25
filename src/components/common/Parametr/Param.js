@@ -45,6 +45,7 @@ const Param = {
         
         
         paramTitle.addEventListener('click', function(e){
+            paramTitle.classList.toggle('param__title_active')
             paramOptionsWrapper.classList.toggle('param__options-wrapper_visible')
             paramIcon.classList.toggle('param__icon_visible')   
         })
