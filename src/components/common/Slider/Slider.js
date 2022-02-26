@@ -64,24 +64,48 @@ const Slider = {
 
         function slideOne(value, mode=null){
             if(value){
-                sliderOne.value = value
+                if(value < options.min_value){
+                    valueFirst.value = options.min_value
+                }else{
+                    sliderOne.value = value
+                }   
             }
+
             if(parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap){
                 sliderOne.value = parseInt(sliderTwo.value) - minGap;
             }
             sliderMaxValue = sliderOne.max
-            !mode ? valueFirst.value = sliderOne.value : null
+            
+            if(!mode && isNaN(value)){
+                valueFirst.value = sliderOne.value
+            } else if(value == ''){
+                valueFirst.value = null
+            } 
             fillColor();
         }
 
         function slideTwo(value, mode=null){
-            if(value){
-                sliderTwo.value = value
+            if(value){ 
+                if(value < valueFirst.value || value > parseInt(options.max_value)){
+                    valueSecond.value = options.max_value
+                    sliderTwo.value = options.max_value
+                }else{
+                    valueSecond.value = value
+                    sliderTwo.value = value
+                }   
             }
+
             if(parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap){
                 sliderTwo.value = parseInt(sliderOne.value) + minGap;
             }
-            !mode ? valueSecond.value = sliderTwo.value : null
+
+            if(!mode && isNaN(value)){
+                valueSecond.value = sliderTwo.value
+            } else if(value == ''){
+                valueSecond.value = null
+                sliderTwo.value = options.max_value
+            }
+
             sliderMaxValue = sliderOne.max
             fillColor();
         }
