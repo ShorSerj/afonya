@@ -8,22 +8,78 @@
 </head>
 
 <body>
-  <div class="filter">
-    <div class="filter__title">Подбор по параметрам
-      <svg class="filter__arrow" width="13" height="7" viewBox="0 0 13 7" fill="none"
-        xmlns="http://www.w3.org/2000/svg">
-        <path d="M1 1L6.5 5L12 1" stroke="white" stroke-width="2" />
-      </svg>
-    </div>
-    <div class="filter-wrapper">
-      <div class="filter__min-filter">
+  <div class="item-wrapper">
+    <div class="item">
+      <div class="item__images slider">
+        <div class="slider__image-main">
+          <img src="./assets/images/main-img.jpg" alt="Смеситель Axor Starck фото_1">
+          <div class="slider__loupe">
+            <img src="./assets/images/loupe.png" alt="">
+          </div>
+        </div>
+        <div class="slider__images">
+          <div class="slider__arrow">
+            <img src="./assets/images/polygon_left.png" alt="">
+          </div>
+          <div class="slider__image slider__images_active">
+            <img src="./assets/images/card-img_1.jpg" alt="Смеситель Axor Starck фото_1">
+          </div>
+          <div class="slider__image">
+            <img src="./assets/images/card-img_2.png" alt="Смеситель Axor Starck фото_2">
+          </div>
+          <div class="slider__image">
+            <img src="./assets/images/card-img_3.png" alt="Смеситель Axor Starck фото_3">
+          </div>
+          <div class="slider__image">
+            <img src="./assets/images/card-img_4.png" alt="Смеситель Axor Starck фото_4">
+          </div>
+          <div class="slider__arrow">
+            <img src="./assets/images/polygon_right.png" alt="">
+          </div>
+        </div>
+        <ul class="item__checkbox-wrapper">
+          <li>
+            <input class="item__checkbox" type="checkbox" name="" id="checkbox">
+            <div class="item__checkbox-mark"></div>
+            <label class="item__checkbox-label" for="checkbox">сравнить</label>
+          </li>
+          <li>
+            <input class="item__checkbox" type="checkbox" name="" id="checkbox">
+            <div class="item__checkbox-mark"></div>
+            <label class="item__checkbox-label" for="checkbox">избранное</label>
+          </li>
+        </ul>
+      </div>
+      <div class="item__info">
+        <h3 class="item__title">Смеситель Axor Starck 10821 для кухни с выдвижной лейкой, однозахватный, поворотный
+          излив 500 см, хром</h3>
+        <ul class="item__description-wrapper">
+          <li class="item__description">
+            Технические характеристики
+          </li>
+          <li class="item__description">
+            Дополнительная информация
+          </li>
+        </ul>
+        <div class="item__star-line-wrapper">
+          <div class="star-line">
+            <div class="star-line_gold"></div>
+          </div>
+          <span class="star-line__count">2 отзыва</span>
+        </div>
+        <div class="item__params params-wrapper">
+          <ul class="params__color">
+            <li class="params__color_active"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+      </div>
+      <div class="item__basket"></div>
 
-      </div>
-      <div class="filter__max-filter">
-
-      </div>
-      <div class="filter__more">
-      </div>
     </div>
   </div>
 </body>

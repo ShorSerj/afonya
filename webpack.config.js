@@ -29,7 +29,6 @@ module.exports = {
   mode,
   target,
   plugins,
-  devtool: 'source-map',
   entry: './src/index.js',
   devServer: {
     static: './dist',
@@ -38,7 +37,7 @@ module.exports = {
 
   output: {
     path: path.resolve(__dirname, 'dist'),
-    assetModuleFilename: 'assets/[hash][ext][query]',
+    assetModuleFilename: 'assets/[name][ext][query]',
     clean: true,
   },
 

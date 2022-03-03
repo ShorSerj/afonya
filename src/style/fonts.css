@@ -1,6 +1,15 @@
 @font-face {
     font-family: 'Roboto';
     font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: local('Roboto'),
+        url('../assets/fonts/Roboto-Bold.ttf') format('ttf'),
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
     font-weight: 500;
     font-display: swap;
     src: local('Roboto'),
