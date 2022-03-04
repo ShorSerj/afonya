@@ -14,7 +14,7 @@ git clone git add README.md
 2. Установить все пакеты, применяемые в данном проекте:
 
 ```    
-git install
+npm install
 ```
 
 # Запуск проекта
