@@ -69,18 +69,102 @@
         </div>
         <div class="item__params params-wrapper">
           <ul class="params__color">
-            <li class="params__color_active"></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li class="params__color_active params__color_1"></li>
+            <li class="params__color_deactivated params__color_2"></li>
+            <li class="params__color_deactivated params__color_3"></li>
+            <li class="params__color_4"></li>
+            <li class="params__color_5"></li>
+          </ul>
+          <ul class="params__size">
+            <li class="params__size_active">500 см</li>
+            <li class="">400 см</li>
+            <li class="params__size_deactivated">200 см</li>
+            <li class="params__size_deactivated">100 см</li>
           </ul>
         </div>
+        <div class="item__availability availability">
+          <img src="./assets/images/ellipse_22.png" alt="">
+          <p class="availability__text">В наличии 7 шт.<span class="availability__shops">в 6 магазинах</span></p>
+          <p class="availability__text">и 8 шт.<span class="availability__shops">на удаленном складе</span></p>
+        </div>
+        <div class="item__delivery delivery">
+          <img src="./assets/images/lightning.png" alt="">
+          <div class="delivery__content">#ЭкспрессДоставка за 30 минут из магазина <span class="delivery__space"></span>
+            <p class="delivery__old-price">190 р.</p> <span class="delivery__new-price">99 р.</span>
+          </div>
+        </div>
+        <div class="item__refined-info">
+          <p>Монтажникам и дизайнерам бесплатно!</p>
+          <p>Срок поставки сверх складского запаса 1-10 дней</p>
+        </div>
+        <div class="item__stocks">
+          <img src="./assets/images/stock_1.png" alt="1000 р. в подарок">
+          <img src="./assets/images/stock_2.png" alt="Бесплатная доставка">
+          <img src="./assets/images/stock_3.png" alt="Бесплатный подъем">
+          <img src="./assets/images/stock_4.png" alt="Промокод: 10AXOR">
+        </div>
       </div>
-      <div class="item__basket"></div>
+      <div class="item__basket basket">
+        <dl class="basket__price-today">
+          <dt>Цена сегодня:</dt>
+          <dd>23 350 руб.</dd>
+        </dl>
+        <dl>
+          <dt>Цена:</dt>
+          <dd><s>23 800 руб.</s></dd>
+        </dl>
+        <dl>
+          <dt>Скидка:</dt>
+          <dd>450 руб. (1.00%)</dd>
 
+        </dl>
+        <dl>
+          <dt>Розничная цена:</dt>
+          <dd>23 800 руб.</dd>
+        </dl>
+        <dl>
+          <dt><b>Цена по VIP-карте:</b></dt>
+          <dd><b>221 182 руб.</b></dd>
+        </dl>
+        <p class="basket__price-union">
+          <img src="./assets/images/union.png" alt="union">
+          555 596 (15.11%)
+        </p>
+        <div class="basket__functions">
+          <div class="number">
+            <div class="number__symbol number__minus">
+              <img src="./assets/images/minus.png" alt="">
+            </div>
+            <input type="number" min="0" value="1" readonly>
+            <div class="number__symbol number__plus">
+              <img src="./assets/images/plus.png" alt="">
+            </div>
+          </div>
+          <button class="add-item" type="button" onclick="">В корзину</button>
+        </div>
+        <p class="basket__clarification">*в кредит от <b>1 143 руб.</b> в месяц</p>
+        <div class="basket__check-price">
+          Узнать цену по
+          <span class="basket__promo ">ПРОМОКОДУ</span>
+          <span class="basket__vip">VIP-карте</span>
+          <div class="basket__promo-paste">
+            <input type="text" placeholder="Укажите промокод">
+            <button class="basket__send-promo basket__send-promo_nonvisual" type="button" onclick="">Применить</button>
+            <p class="basket__promo-info">Ваша цена: <span>7 992 руб.</span></p>
+          </div>
+          <div class="basket__vip-paste basket__vip-paste_active">
+            <p>Цена по VIP-карте:</p>
+            <p class="basket__vip-coast">41 090,90 руб.</p>
+            <button class="basket__send-vip" type="button" onclick="">Добавить в
+              корзину</button>
+            <p class="basket__vip-info">VIP-карта
+              + 700 руб.</p>
+          </div>
+        </div>
+      </div>
     </div>
+
+  </div>
   </div>
 </body>
 

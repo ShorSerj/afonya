@@ -5,6 +5,9 @@ const CopyPlugin = require('copy-webpack-plugin');
 
 let mode = 'development';
 let target = 'web';
+
+const isDev = process.env.NODE_ENV === 'development';
+
 if (process.env.NODE_ENV === 'production') {
   mode = 'production';
   target = 'browserslist';
@@ -61,8 +64,13 @@ module.exports = {
         },
       },
       {
-        test: /\.(png|jpe?g|gif|svg|webp|ico)$/i,
-        type: mode === 'production' ? 'asset' : 'asset/resource',
+        test: /\.(?:|gif|png|jpe?g|svg|webp|ico)$/,
+        type: 'asset/resource',
+        generator: {
+          filename: () => {
+            return isDev ? 'img/[name][ext]' : 'img/[name][ext]';
+          }
+        }
       },
       {
         test: /\.(woff2?|eot|ttf|otf)$/i,
