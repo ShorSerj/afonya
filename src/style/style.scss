@@ -1,6 +1,20 @@
 body {
     font-family: 'Roboto';
-    display: flex;
-    justify-content: center;
     width: 1920px;
+    background: linear-gradient(0deg, #D5E4ED, #D5E4ED), #E4EAF3;
+    display: grid;
+    grid-row-gap: 20px;
+}
+.container {
+    max-width: 1536px;
+}
+
+.content {
+    display: grid;
+    grid-template-areas:
+        "nav main aside";
+    margin: 0 auto;
+    background: #FFFFFF;
+    border-radius: 10px;
+    padding: 14px 6px 14px 16px;
 }
