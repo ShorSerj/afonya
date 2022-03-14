@@ -4,5 +4,13 @@ import './style/style.scss';
 import './style/header.scss';
 import './style/footer.scss';
 import './style/lside/style.scss';
-
-
+import './style/lside/navigation.scss';
+import './style/lside/addresses.scss';
+import './style/lside/info.scss';
+import './style/main/style.scss';
+import './style/main/filter.scss';
+import './style/main/slider.scss';
+import './style/main/categories.scss';
+import './style/rside/style.scss';
+import './style/rside/search.scss';
+import './style/rside/user.scss';

@@ -31,3 +31,27 @@
         url('../assets/fonts/Roboto-Regular.otf') format('otf'),
         url('../assets/fonts/Roboto-Regular.woff') format('woff'),
 }
+
+@font-face {
+    font-family: 'Circe';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: local('Circe'),
+        url('../assets/fonts/Circe-Bold.ttf') format('ttf'),
+        url('../assets/fonts/Circe-Bold.eot') format('eot'),
+        /* url('../assets/fonts/Circe-Bold.otf') format('otf'), */
+        url('../assets/fonts/Circe-Bold.woff') format('woff'),
+}
+
+@font-face {
+    font-family: 'Circe';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Circe'),
+        url('../assets/fonts/Circe-Regular.ttf') format('ttf'),
+        url('../assets/fonts/Circe-Regular.eot') format('eot'),
+        /* url('../assets/fonts/Circe-Bold.otf') format('otf'), */
+        url('../assets/fonts/Circe-Regular.woff') format('woff'),
+}

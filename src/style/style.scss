@@ -1,12 +1,23 @@
 body {
     font-family: 'Roboto';
-    width: 1920px;
+    // width: 1920px;
     background: linear-gradient(0deg, #D5E4ED, #D5E4ED), #E4EAF3;
     display: grid;
     grid-row-gap: 20px;
+    color: #222222;
+    font-size: 14px;
+    line-height: 100%;
+
+    .page {
+        display: flex;
+    }
 }
+
 .container {
     max-width: 1536px;
+    position: relative;
+
+
 }
 
 .content {

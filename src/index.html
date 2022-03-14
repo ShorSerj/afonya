@@ -38,55 +38,555 @@
     </div>
   </header>
   <div class="page">
-    <div class="">sss</div>
+    <!-- <div class="">sss</div> -->
     <div class="content container">
       <div class="lside">
-        <nav class="nav">
+        <nav class="lside__nav nav">
           <p class="nav__title">Каталог товаров</p>
-          <ul>
-            <li>SALE</li>
-            <li>Керамическая плитка</li>
-            <li>Ламинат</li>
-            <li>Обои</li>
-            <li>Ванны</li>
-            <li>Мебель для ванных комнат</li>
-            <li>Смесители</li>
-            <li>Унитазы, раковины, биде</li>
-            <li>Инсталляции</li>
-            <li>Душевые кабины</li>
-            <li>Аксессуары для санузла</li>
-            <li>Мойки</li>
-            <li>Котлы, водонагреватели, газовые колонки</li>
-            <li>Радиаторы, полотенцесушители, конвекторы</li>
-            <li>Теплые полы (электро), греющий кабель</li>
-            <li>Водопровод и отопление</li>
-            <li>Канализация, дренаж</li>
-            <li>Насосы</li>
-            <li>Печи банные и отопительные</li>
-            <li>Садовая мебель, инвентарь, емкости</li>
-            <li>Системы водоочистки</li>
-            <li>Вентиляция, кондиционирование</li>
-            <li>Бытовая техника</li>
-            <li>Крепеж, метизы</li>
-            <li>Инструмент</li>
-            <li>Электрооборудование</li>
-            <li>Разное</li>
-            <li>Гальваника (покраска изделий)</li>
-            <li>Уцененный товар</li>
-            <li>Дисконтные и подарочные карты</li>
-            <li>Натяжные потолки</li>
+          <ul class="nav__wrapper">
+            <li class="nav__item nav__parent">
+              <span class="nav__icon"></span>
+              <a class="nav__link nav__stock" href="#">SALE</a>
+            </li>
+            <li class="nav__item nav__parent">
+              <span class="nav__icon"></span>
+              <a class="nav__link" href="#">Керамическая плитка</a>
+              <div class="nav__promo">
+              </div>
+            </li>
+            <li class="nav__item nav__parent">
+              <span class="nav__icon"></span>
+              <a class="nav__link" href="#">Ламинат</a>
+            </li>
+            <li class="nav__item nav__parent">
+              <span class="nav__icon"></span>
+              <a class="nav__link" href="#">Обои</a>
+              <ul>
+                <li class="nav__item nav__child nav__parent">
+                  <span class="nav__icon"></span>
+                  <a class="nav__link" href="#">CASADECO</a>
+                </li>
+                <li class="nav__item nav__child">
+                  <a class="nav__link" href="#">Midbec</a>
+                  <div class="nav__promo">
+                  </div>
+                </li>
+                <li class="nav__item nav__child nav__parent">
+                  <span class="nav__icon"></span>
+                  <a class="nav__link" href="#">OVK-Design</a>
+                  <ul class="block nav__child">
+                    <li class="nav__item nav__child">
+                      <a class="nav__link" href="#">DIETER LANGER Eleganza</a>
+                    </li>
+                    <li class="nav__item nav__child">
+                      <a class="nav__link" href="#">DIETER LANGER Inspiration</a>
+                    </li>
+                    <li class="nav__item nav__child">
+                      <a class="nav__link" href="#">SIRPI Nature</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav__item nav__child">
+                  <span class="nav__icon"></span>
+                  <a class="nav__link" href="#">Thibaut</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav__item">
+              <span class="nav__icon"></span>
+              <a class="nav__link" href="#">Ванны</a>
+            </li>
+            <li class="nav__item">
+              <span class="nav__icon"></span>
+              <a class="nav__link" href="#">Мебель для ванных комнат</a>
+            </li>
+            <li class="nav__item">
+              <span class="nav__icon"></span>
+              <a class="nav__link" href="#">Смесители</a>
+            </li>
+            <li class="nav__item">
+              <span class="nav__icon"></span>
+              <a class="nav__link" href="#">Унитазы, раковины,
+                биде</a>
+            </li>
+            <li class="nav__item">
+              <span class="nav__icon"></span>
+              <a class="nav__link" href="#">Инсталляции</a>
+            </li>
+            <li class="nav__item">
+              <span class="nav__icon"></span>
+              <a class="nav__link" href="#">Душевые кабины</a>
+            </li>
+            <li class="nav__item">
+              <span class="nav__icon"></span>
+              <a class="nav__link" href="#">Аксессуары для
+                санузла</a>
+            </li>
+            <li class="nav__item">
+              <span class="nav__icon"></span>
+              <a class="nav__link" href="#">Мойки</a>
+            </li>
+            <li class="nav__item">
+              <span class="nav__icon"></span>
+              <a class="nav__link" href="#">Котлы, водонагреватели,
+                газовые колонки</a>
+            </li>
+            <li class="nav__item">
+              <span class="nav__icon"></span>
+              <a class="nav__link" href="#">Радиаторы, полотенцесушители, конвекторы</a>
+            </li>
+            <li class="nav__item"><span class="nav__icon"></span>
+              <a class="nav__link" href="#">Теплые полы (электро), греющий кабель</a></li>
+            <li class="nav__item"><span class="nav__icon"></span>
+              <a class="nav__link" href="#">Водопровод и отопление</a></li>
+            <li class="nav__item"><span class="nav__icon"></span>
+              <a class="nav__link" href="#">Канализация, дренаж</a>
+            </li>
+            <li class="nav__item"><span class="nav__icon"></span>
+              <a class="nav__link" href="#">Насосы</a></li>
+            <li class="nav__item"><span class="nav__icon"></span>
+              <a class="nav__link" href="#">Печи банные и отопительные</a></li>
+            <li class="nav__item"><span class="nav__icon"></span>
+              <a class="nav__link" href="#">Садовая мебель, инвентарь, емкости</a></li>
+            <li class="nav__item"><span class="nav__icon"></span>
+              <a class="nav__link" href="#">Системы водоочистки</a></li>
+            <li class="nav__item"><span class="nav__icon"></span>
+              <a class="nav__link" href="#">Вентиляция, кондиционирование</a></li>
+            <li class="nav__item"><span class="nav__icon"></span>
+              <a class="nav__link" href="#">Бытовая техника</a></li>
+            <li class="nav__item"><span class="nav__icon"></span>
+              <a class="nav__link" href="#">Крепеж, метизы</a></li>
+            <li class="nav__item"><span class="nav__icon"></span>
+              <a class="nav__link" href="#">Инструмент</a></li>
+            <li class="nav__item"><span class="nav__icon"></span>
+              <a class="nav__link" href="#">Электрооборудование</a></li>
+            <li class="nav__item"><span class="nav__icon"></span>
+              <a class="nav__link" href="#">Разное</a></li>
+            <li class="nav__item">
+              <span class="nav__icon"></span>
+              <a class="nav__link" href="#">Гальваника (покраска изделий)</a>
+              <div class="nav__promo">
+              </div>
+            </li>
+            <li class="nav__item"><span class="nav__icon"></span>
+              <a class="nav__link" href="#">Уцененный товар</a></li>
+            <li class="nav__item"><span class="nav__icon"></span>
+              <a class="nav__link" href="#">Дисконтные и подарочные карты</a></li>
+            <li class="nav__item"><span class="nav__icon"></span>
+              <a class="nav__link" href="#">Натяжные потолки</a></li>
           </ul>
         </nav>
-        <div class=""></div>
+        <div class="lside__addresses addresses">
+          <p class="addresses__title">Адреса магазинов</p>
+          <div class="addresses__wrapper">
+            <div class="addresses__item">
+              <p class="addresses__number_bold">Интернет-магазин</p>
+              <p>(812) <span class="addresses__number_bold">648-22-11</span> (доб. 000)</p>
+              <p>+7 (981) <span class="addresses__number_bold">915-22-11</span></p>
+              <p>+7 (981) <span class="addresses__number_bold">915-22-11</span></p>
+            </div>
+            <div class="addresses__item">
+              <p class="addresses__number_bold">Дунайский пр., д.27</p>
+              <p>(812) <span class="addresses__number_bold">6648-22-11</span> (доб. 001)</p>
+              <p>+7 (911) <span class="addresses__number_bold">120-27-87</span></p>
+              <p>+7 (911) <span class="addresses__number_bold">120-08-58</span></p>
+              <p class="addresses__number_bold">zv@afonya-spb.ru</p>
+              <img src="./assets/images/lside/addresses/adderes-info.png" alt="Инфо">
+            </div>
+            <div class="addresses__item">
+              <p class="addresses__number_bold">Ивановская ул., 17</p>
+              <p>(812) <span class="addresses__number_bold">648-22-11</span> (доб. 002)</p>
+              <p>(812) <span class="addresses__number_bold">560-31-89</span></p>
+              <p>(812) <span class="addresses__number_bold">983-43-06</span></p>
+              <p class="addresses__number_bold">iv@afonya-spb.ru</p>
+              <img src="./assets/images/lside/addresses/adderes-info.png" alt="Инфо">
+            </div>
+            <div class="addresses__item">
+              <p class="addresses__number_bold">Моховая ул., 42</p>
+              <p>(812) <span class="addresses__number_bold">648-22-11</span> (доб. 003)</p>
+              <p>(812) <span class="addresses__number_bold">579-68-41</span></p>
+              <p>(812) <span class="addresses__number_bold">719-73-17</span></p>
+              <p class="addresses__number_bold">mox@afonya-spb.ru</p>
+              <img src="./assets/images/lside/addresses/adderes-info.png" alt="Инфо">
+            </div>
+            <div class="addresses__item">
+              <p class="addresses__number_bold">Искровский пр-т., 29 корп.2</p>
+              <p>(812) <span class="addresses__number_bold">648-22-11</span> (доб. 004)</p>
+              <p>(812) <span class="addresses__number_bold">574-94-77</span></p>
+              <p>(812) <span class="addresses__number_bold">400-29-09</span></p>
+              <p class="addresses__number_bold">isk@afonya-spb.ru</p>
+            </div>
+            <div class="addresses__item">
+              <p class="addresses__number_bold">Просвещения пр., 46к1</p>
+              <p>(812) <span class="addresses__number_bold">648-22-11</span> (доб. 005)</p>
+              <p>+7 (981) <span class="addresses__number_bold">914-22-11</span></p>
+              <p>+7 (981) <span class="addresses__number_bold">913-22-11</span></p>
+              <p class="addresses__number_bold">prsv@afonya-spb.ru</p>
+              <p class="addresses__department">отдел плитки</p>
+              <img src="./assets/images/lside/addresses/adderes-info.png" alt="Инфо">
+              <div class="addresses__info">
+                <p class="addresses__info-text">Отдельная парковка рядом с магазином не предусмотрена</p>
+                <div class="addresses__info-img">
+                  <img src="./assets/images/lside/addresses/notice_parking.png" alt="Предупреждение">
+                </div>
+              </div>
+            </div>
+            <div class="addresses__item">
+              <p class="addresses__number_bold">Гаккелевская ул., 33/1</p>
+              <p>(812) <span class="addresses__number_bold">648-22-11</span> (доб. 006)</p>
+              <p>(812) <span class="addresses__number_bold">431-88-71</span></p>
+              <p>+7 (981) <span class="addresses__number_bold">918-22-11</span></p>
+              <p class="addresses__number_bold">kom@afonya-spb.ru</p>
+            </div>
+            <div class="addresses__item">
+              <p class="addresses__number_bold">Ленинский пр-т., 114</p>
+              <p>(812) <span class="addresses__number_bold">648-22-11</span> (доб. 007)</p>
+              <p>(812) <span class="addresses__number_bold">411-64-13</span></p>
+              <p>(812) <span class="addresses__number_bold">983-43-09</span></p>
+              <p class="addresses__number_bold">len@afonya-spb.ru</p>
+            </div>
+            <div class="addresses__item">
+              <p class="addresses__number_bold">Якорная ул., 2</p>
+              <p>(812) <span class="addresses__number_bold">648-22-11</span> (доб. 008)</p>
+              <p>(812) <span class="addresses__number_bold">227-78-39</span></p>
+              <p>(812) <span class="addresses__number_bold">642-08-90</span></p>
+              <p class="addresses__number_bold">yak@afonya-spb.ru</p>
+              <img src="./assets/images/lside/addresses/adderes-info.png" alt="Инфо">
+            </div>
+            <div class="addresses__item">
+              <p class="addresses__number_bold">Энгельса пр., 29</p>
+              <p>(812) <span class="addresses__number_bold">648-22-11</span> (доб. 009)</p>
+              <p>+7 (981) <span class="addresses__number_bold">917-22-11</span></p>
+              <p>+7 (981) <span class="addresses__number_bold">905-22-11</span></p>
+              <p class="addresses__number_bold">nau@afonya-spb.ru</p>
+              <img src="./assets/images/lside/addresses/adderes-info.png" alt="Инфо">
+            </div>
+            <div class="addresses__item">
+              <p class="addresses__number_bold">Косыгина пр., 27/1</p>
+              <p>(812) <span class="addresses__number_bold">648-22-11</span> (доб. 010)</p>
+              <p>(812) <span class="addresses__number_bold">521-63-07</span></p>
+              <p>(812) <span class="addresses__number_bold">521-78-59</span></p>
+              <p class="addresses__number_bold">kos@afonya-spb.ru</p>
+              <p class="addresses__department">отдел плитки</p>
+              <div class="addresses__info">
+                <p class="addresses__info-text">Отдельная парковка рядом с магазином не предусмотрена</p>
+                <div class="addresses__info-img">
+                  <img src="./assets/images/lside/addresses/notice_parking_green.png" alt="Предупреждение">
+                </div>
+              </div>
+            </div>
+            <div class="addresses__item">
+              <p class="addresses__number_bold">Железноводская д. 3, 3 этаж, 318 секция</p>
+              <p>(812) <span class="addresses__number_bold">648-22-11</span> (доб. 011)</p>
+              <p>+7 (981) <span class="addresses__number_bold">140-22-11</span></p>
+              <p class="addresses__number_bold">vo@afonya-spb.ru</p>
+              <p class="addresses__department">дизайн-проект бесплатно (доб. 119)</p>
+            </div>
+            <div class="addresses__item">
+              <p class="addresses__number_bold">Народная ул., 21</p>
+              <p>(812) <span class="addresses__number_bold">648-22-11</span> (доб. 012)</p>
+              <p>+7 (981) <span class="addresses__number_bold">174-22-11</span></p>
+              <p>+7 (981) <span class="addresses__number_bold">173-22-11</span></p>
+              <p class="addresses__number_bold">nrd@afonya-spb.ru</p>
+              <img src="./assets/images/lside/addresses/adderes-info.png" alt="Инфо">
+            </div>
+            <div class="addresses__item">
+              <p class="addresses__number_bold">Малый пр. ПС, 65/16</p>
+              <p>(812) <span class="addresses__number_bold">648-22-11</span> (доб. 013)</p>
+              <p>+7 (981) <span class="addresses__number_bold">160-22-11</span></p>
+              <p>+7 (981) <span class="addresses__number_bold">180-22-11</span></p>
+              <p class="addresses__number_bold">malps@afonya-spb.ru</p>
+              <img src="./assets/images/lside/addresses/adderes-info.png" alt="Инфо">
+            </div>
+            <div class="addresses__item">
+              <p class="addresses__number_bold">Гражданский пр.,15</p>
+              <p>(812) <span class="addresses__number_bold">648-22-11</span> (доб. 014)</p>
+              <p>+7 (911) <span class="addresses__number_bold">915-22-11</span></p>
+              <p class="addresses__number_bold">grzh@afonya-spb.ru</p>
+              <p class="addresses__department">отдел плитки</p>
+              <img src="./assets/images/lside/addresses/adderes-info.png" alt="Инфо">
+            </div>
+            <div class="addresses__item">
+              <p class="addresses__number_bold">Проектно-оптовый отдел</p>
+              <p>(812) <span class="addresses__number_bold">648-22-11</span> (доб. 700)</p>
+              <p>(812) <span class="addresses__number_bold">648-22-93</span></p>
+              <p class="addresses__number_bold">optotd@afonya-spb.ru</p>
+            </div>
+            <div class="addresses__item">
+              <p class="addresses__number_bold">Склад и отдел логистики</p>
+              <p>(812) <span class="addresses__number_bold">648-22-11</span> (доб. 980)</p>
+            </div>
+          </div>
+        </div>
+        <div class="lside__info">
+          <div class="lside__wifi wifi">
+            <img src="./assets/images/lside/info/free_wi-fi.png" alt="Бесплатный wi-fi">
+            <div class="wifi__text">
+              <p class="wifi__title">БЕСПЛАТНЫЙ Wi-Fi</p>
+              <p>во всех магазинах</p>
+            </div>
+          </div>
+          <div class="lside__link">
+            <img src="./assets/images/lside/info/link.png" alt="Сантехника онлайн в интернет магазине Афоня СПб">
+          </div>
+          <div class="lside__rating">
+            <img src="./assets/images/lside/info/rating.png"
+              alt="Читайте отзывы покупателей и оценивайте качество магазина на Яндекс.Маркете">
+          </div>
+        </div>
       </div>
-      <main>some</main>
-      <div class="">
-        <div class="search">some</div>
-        <aside>some</aside>
+      <main class="main">
+        <div class="main__filter filter">
+          <div class="filter__header">
+            Подбор по параметрам
+            <img class="filter__arrow" src="./assets/images/main/filter_arrow_down.png" alt="Раскрыть фильтр">
+          </div>
+          <div class="filter__body">
+            <div class="filter__wrapper">
+              <ul class="filter__min-filter">
+
+                <li class="param">
+                  <div class="param__title">
+                    <div class="param__title-text">Вид
+                      <img class="param__title-icon" src="./assets/images/main/filter_arrow_body.png"
+                        alt="Раскрыть фильтр">
+                    </div>
+                  </div>
+                </li>
+                <li class="param">
+                  <div class="param__title">
+                    <div class="param__title-text">Бренд
+                      <img class="param__title-icon" src="./assets/images/main/filter_arrow_body.png"
+                        alt="Раскрыть фильтр">
+                    </div>
+                  </div>
+                </li>
+                <li class="param">
+                  <div class="param__title">
+                    <div class="param__title-text">Подвид
+                      <img class="param__title-icon" src="./assets/images/main/filter_arrow_body.png"
+                        alt="Раскрыть фильтр">
+                    </div>
+                  </div>
+                </li>
+                <li class="param">
+                  <div class="param__title">
+                    <div class="param__title-text">Тип
+                      <img class="param__title-icon" src="./assets/images/main/filter_arrow_body.png"
+                        alt="Раскрыть фильтр">
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <div class="filter__more filter__more-max">Показать больше параметров (27)</div>
+            </div>
+          </div>
+        </div>
+        <div class="main__slider slider">
+          <div class="banner">
+            <p class="banner__title">Сантехника и плитка</p>
+            <p class="banner__content">Создаем комфортную атмосферу для каждого члена вашей семьи</p>
+          </div>
+          <div class="slider__nav">
+            <div class="slider__dot slider__dot_active"></div>
+            <div class="slider__dot"></div>
+            <div class="slider__dot"></div>
+          </div>
+        </div>
+        <div class="main__categories categories">
+          <div class="categories__item">
+            <div class="categories__image">
+              <img src="./assets/images/main/categories/tile.png" alt="Плитка">
+            </div>
+            <p class="categories__item-title">Плитка</p>
+          </div>
+          <div class="categories__item">
+            <div class="categories__image">
+              <img src="./assets/images/main/categories/bath.png" alt="Ванны">
+            </div>
+            <p class="categories__item-title">Ванны</p>
+          </div>
+          <div class="categories__item">
+            <div class="categories__image">
+              <img src="./assets/images/main/categories/item_3.png" alt="Душевые кабины">
+            </div>
+            <p class="categories__item-title">Душевые кабины</p>
+          </div>
+          <div class="categories__item">
+            <div class="categories__image">
+              <img src="./assets/images/main/categories/item_4.png" alt="Унитазы,
+              раковины, биде">
+            </div>
+            <p class="categories__item-title">Унитазы,
+              раковины, биде</p>
+          </div>
+          <div class="categories__item">
+            <div class="categories__image">
+              <img src="./assets/images/main/categories/item_5.png" alt="Мебель для
+              ванных комнат">
+            </div>
+            <p class="categories__item-title">Мебель для
+              ванных комнат</p>
+          </div>
+          <div class="categories__item">
+            <div class="categories__image">
+              <img src="./assets/images/main/categories/item_6.png" alt="Инсталляции">
+            </div>
+            <p class="categories__item-title">Инсталляции</p>
+          </div>
+          <div class="categories__item">
+            <div class="categories__image">
+              <img src="./assets/images/main/categories/item_7.png" alt="Мойки">
+            </div>
+            <p class="categories__item-title">Мойки</p>
+          </div>
+          <div class="categories__item">
+            <div class="categories__image">
+              <img src="./assets/images/main/categories/item_8.png" alt="Смесители">
+            </div>
+            <p class="categories__item-title">Смесители</p>
+          </div>
+          <div class="categories__item">
+            <div class="categories__image">
+              <img src="./assets/images/main/categories/item_9.png" alt="Теплый пол">
+            </div>
+            <p class="categories__item-title">Теплый пол</p>
+          </div>
+          <div class="categories__item">
+            <div class="categories__image">
+              <img src="./assets/images/main/categories/item_10.png" alt="Водопровод и отопление">
+            </div>
+            <p class="categories__item-title">Водопровод и отопление</p>
+          </div>
+          <div class="categories__item">
+            <div class="categories__image">
+              <img src="./assets/images/main/categories/item_11.png" alt="Насосы">
+            </div>
+            <p class="categories__item-title">Насосы</p>
+          </div>
+          <div class="categories__item">
+            <div class="categories__image">
+              <img src="./assets/images/main/categories/item_12.png" alt="Радиаторы,
+              полотенцесушители">
+            </div>
+            <p class="categories__item-title">Радиаторы,
+              полотенцесушители</p>
+          </div>
+          <div class="categories__item">
+            <div class="categories__image">
+              <img src="./assets/images/main/categories/item_13.png" alt="Котлы">
+            </div>
+            <p class="categories__item-title">Котлы</p>
+          </div>
+          <div class="categories__item">
+            <div class="categories__image">
+              <img src="./assets/images/main/categories/item_14.png" alt="Водонагреватели">
+            </div>
+            <p class="categories__item-title">Водонагреватели</p>
+          </div>
+          <div class="categories__item">
+            <div class="categories__image">
+              <img src="./assets/images/main/categories/item_15.png" alt="Печи банные
+              и отопительные">
+            </div>
+            <p class="categories__item-title">Печи банные
+              и отопительные</p>
+          </div>
+          <div class="categories__item">
+            <div class="categories__image">
+              <img src="./assets/images/main/categories/item_16.png" alt="Системы водоочистки">
+            </div>
+            <p class="categories__item-title">Системы водоочистки</p>
+          </div>
+        </div>
+        <div class="main__content">
+          <img src="./assets/images/main/background.jpg" alt="">
+        </div>
+      </main>
+      <div class="rside">
+        <div class="rside__search">
+          <div class="rside__input">
+            <input class="search" type="text" placeholder="Поиск по каталогу">
+          </div>
+        </div>
+        <div class="rside__user user-wrapper">
+          <div class="user__activity">
+            <div class="user__basket basket">
+              <div class="basket__logo">
+                <img src="./assets/images/rside/user/basket.png" alt="Корзина">
+                <span class="basket__notification">26</span>
+              </div>
+              <p class="basket__text">на <span class="basket__sum">2 324 589 р.</span></p>
+            </div>
+            <div class="user__favorite favorite">
+              <img src="./assets/images/rside/user/favorite.png" alt="Избранное">
+              <span class="favorite__notification">0</span>
+            </div>
+          </div>
+          <div class="user__account-wrapper">
+            <div class="user__account">
+              <div class="user__avatar">
+                <img src="./assets/images/rside/user/avatar.png" alt="Аватарка">
+              </div>
+              <div class="user__name">
+                <p>Василий</p>
+                <div class="user__arrow">
+                  <img src="./assets/images/common/arrow-down_black.png" alt="Раскрыть меню">
+                </div>
+              </div>
+            </div>
+            <div class="user__logout">
+              <p>Выйти</p>
+            </div>
+          </div>
+        </div>
+        <aside>
+          <div class="rside__banner banner">
+            <p class="banner__title">ИНТЕРЕСНО</p>
+            <p>о сантехнике и плитке</p>
+            <button class="banner__button">Подробнее</button>
+          </div>
+          <div class="rside__all-banners">
+            <img src="./assets/images/rside/banner/all-banners.png" alt="Все баннеры">
+          </div>
+        </aside>
       </div>
     </div>
-    <div class="">sss</div>
+    <!-- <div class="">sss</div> -->
   </div>
+  <footer class="footer-wrapper">
+    <div class="footer container">
+      <div class="footer__icons">
+        <div class="footer__logo">
+          <a href="#"><img src="./assets/images/footer/footer_logo.png" alt="Логотип Афоня.рф"></a>
+        </div>
+        <div class="footer__social">
+          <img src="./assets/images/footer/vk.png" alt="">
+          <img src="./assets/images/footer/instagramm.png" alt="">
+          <img src="./assets/images/footer/facebook.png" alt="">
+          <img src="./assets/images/footer/youtoobe.png" alt="">
+        </div>
+      </div>
+
+      <ul class="footer__nav nav">
+        <li class="nav__item"><a href="#">Меню</a></li>
+        <li class="nav__item nav__item_deactivated"><a href="#">Покупателю</a></li>
+        <li class="nav__item"><a href="#">Контакты</a></li>
+        <li class="nav__item"><a href="#">Доставка</a></li>
+        <li class="nav__item"><a href="#">Разное</a></li>
+
+        <li class="nav__item"><a href="#">Личный кабинет</a></li>
+        <li class="nav__item"><a href="#">Список заказов</a></li>
+        <li class="nav__item"><a href="#">Настройки аккаунта</a></li>
+        <li class="nav__item"><a href="#">Корзина</a></li>
+        <li class="nav__item"><a href="#">Просмотренные товары</a></li>
+      </ul>
+      <div class="footer__info">
+        <p>© Интернет-магазин сантехники и плитки «Афоня.рф» 2021</p>
+        <p>Цена и информация о товарах и услугах на сайте не являются публичной офертой</p>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
