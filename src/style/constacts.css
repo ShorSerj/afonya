@@ -1,0 +1,76 @@
+.shop {
+    width: 1055px;
+    background: #FFFFFF;
+    margin-top: 20px;
+}
+
+.shop__title,
+.managers__title {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.shop__location {
+    margin-top: 20px;
+    display: flex;
+
+}
+
+.shop__description {
+    margin-left: 20px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.info__title {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.info__address {
+    margin-top: 8px;
+}
+
+.info__phones {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.info__phone {
+    margin-top: 8px;
+}
+
+.info__phone:hover,
+.info__mail:hover {
+    color: #0F74D1;
+}
+
+.info__phone:first-child {
+    margin-top: 0px;
+}
+
+.info__mail {
+    margin-top: 8px;
+}
+
+.info__tags {
+    margin-top: 20px;
+    width: 70px;
+}
+
+.shop__managers {
+    margin-top: 40px;
+}
+
+.managers__cards {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.managers__card {}
