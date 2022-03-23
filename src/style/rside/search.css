@@ -1,0 +1,49 @@
+.rside__search {
+    width: 202px;
+}
+
+.search {
+    border: 1px solid #CCCCCC;
+    border-radius: 6px;
+    width: 100%;
+    padding: 12px;
+}
+
+.search::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    color: #767676;
+}
+
+.rside__input {
+    position: relative;
+}
+
+.rside__input::after {
+    content: " ";
+    background: url('../../assets/images/rside/search_deactive.png');
+    position: absolute;
+    top: 10px;
+    right: 22px;
+    width: 20.02px;
+    height: 22.02px;
+
+}
+
+.rside__input {
+    width: 1264px;
+    position: absolute;
+    right: 6px;
+}
+
+.rside__input::after {
+    left: 14px;
+    background: url('../../assets/images/rside/search_active.png');
+    height: 19px;
+    width: 17px;
+}
+
+.search {
+    padding: 12px 45px;
+}

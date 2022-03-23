@@ -1,0 +1,49 @@
+.addresses__title {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+}
+
+.addresses__item {
+    font-size: 12px;
+    margin-top: 14px;
+    padding-bottom: 14px;
+    position: relative;
+    display: grid;
+    row-gap: 6px;
+}
+
+.addresses__number_bold {
+    font-weight: 500;
+}
+
+.addresses__item::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #B2B2B2;
+    height: 1px;
+    width: 200px;
+}
+
+.addresses__department {
+    font-style: italic;
+    color: #B3B3B3;
+}
+
+.addresses__info {
+    display: flex;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+}
+
+.addresses__info-text {
+    width: 162px;
+}
+
+.addresses__info-img {
+    width: 28px;
+    height: 28px;
+}

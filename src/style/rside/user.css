@@ -1,0 +1,161 @@
+.rside__user {
+    margin-top: 24px;
+}
+
+.user__activity {
+    display: flex;
+}
+
+.basket {
+    display: flex;
+}
+
+.basket__logo {
+    position: relative;
+}
+
+.basket__notification {
+    position: absolute;
+    bottom: 7px;
+    left: 8px;
+    background: #0F74D1;
+    border-radius: 7px;
+    font-weight: 500;
+    font-size: 11px;
+    color: #FFFFFF;
+    line-height: 100%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.basket__text {
+    margin-left: 17px;
+}
+
+.basket__sum {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+}
+
+.user__favorite {
+    margin-left: 21px;
+}
+
+.favorite {
+    position: relative;
+}
+
+.favorite__notification {
+    position: absolute;
+    bottom: 7px;
+    left: 13px;
+    background: #0F74D1;
+    border-radius: 7px;
+    font-weight: 500;
+    font-size: 11px;
+    color: #FFFFFF;
+    line-height: 100%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user__account-wrapper {
+    margin-top: 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user__account {
+    display: flex;
+    align-items: center;
+}
+
+.user__avatar {
+    width: 16px;
+}
+
+.user__avatar img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.user__name {
+    margin-left: 6px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.user__arrow {
+    width: 11px;
+    height: 4px;
+    margin-left: 6px;
+}
+
+.user__arrow img {
+    width: 100%;
+    height: 100%;
+}
+
+.user__logout {
+    font-size: 12px;
+    line-height: 100%;
+    color: #B2B2B2;
+    cursor: pointer;
+}
+
+aside {
+    position: relative;
+}
+
+.rside__banner {
+    margin-top: 20px;
+}
+
+.rside__banner .banner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background: url('../../assets/images/rside/banner/water.png');
+    background-repeat: no-repeat;
+    background-size: 90px 90px;
+    font-size: 13px;
+    line-height: 10px;
+    color: #222222;
+    padding: 7px 0 10px;
+    margin-bottom: 14px;
+}
+
+.rside__banner .banner__title {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #0F74D1;
+    margin-bottom: 6px;
+}
+
+.rside__banner .banner__button {
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    background: #0F74D1;
+    border-radius: 4px;
+    padding: 7px 20px;
+    margin-top: 8px;
+}
+
+.rside__all-banners {
+    position: absolute;
+    right: 0;
+}

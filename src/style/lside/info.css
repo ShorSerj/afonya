@@ -1,0 +1,27 @@
+.lside__info {
+    display: grid;
+    row-gap: 22px;
+}
+
+.lside__wifi {
+    margin-top: 22px;
+}
+
+.wifi {
+    display: flex;
+    align-items: center;
+}
+
+.wifi__text {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 5px;
+    margin-left: 14px;
+}
+
+.wifi__title {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    margin-bottom: 6px;
+}
