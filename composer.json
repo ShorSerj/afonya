@@ -1,0 +1,17 @@
+{
+    "name": "sergey/afonya",
+    "autoload": {
+        "psr-4": {
+            "Sergey\\Afonya\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "ShorSerj",
+            "email": "shorser8@gmail.com"
+        }
+    ],
+    "require": {
+        "twig/twig": "2.11"
+    }
+}
