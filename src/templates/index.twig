@@ -9,10 +9,15 @@
     <link href="../style/fonts.css" rel="stylesheet">
     <link href="../style/style.css" rel="stylesheet">
     <link href="../style/constacts.css" rel="stylesheet">
+    <link href="../style/manager.css" rel="stylesheet">
+
 </head>
 
 <body>
-    {% include './components/contacts.twig' %}
+    {% include './components/manager.twig' %}
+    {% block javascripts %}
+    <script type="text/javascript" src="./components/rating.js"></script>
+    {% endblock %}
 </body>
 
 </html>

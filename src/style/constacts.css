@@ -2,6 +2,7 @@
     width: 1055px;
     background: #FFFFFF;
     margin-top: 20px;
+    padding-bottom: 25px;
 }
 
 .shop__title,
@@ -70,7 +71,144 @@
 .managers__cards {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 1px solid #EAEAEA;
+    display: flex;
+    width: 500px;
+}
+
+.card__image {
+    width: 178px;
+    flex-shrink: 0;
+}
+
+.card__text {
+    padding: 20px;
+    width: 100%;
+}
+
+.card__title {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.card__workmanship {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card__comments {
+    font-size: 12px;
+    color: #0F74D1;
+}
+
+.card__position {
+    margin-top: 10px;
+    line-height: 130%;
+}
+
+.card__contact {
+    display: flex;
+    margin-top: 20px;
+}
+
+.card__phone,
+.card__mail {
+    border-radius: 100%;
+    width: 27px;
+    height: 27px;
+    background-color: #B2B2B2;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.card__phone {
+    background-image: url('../assets/images/manager_call.png');
+}
+
+.card__mail {
+    margin-left: 8px;
+    background-image: url('../assets/images/manager_mail.png');
+}
+
+.card__phone:hover,
+.card__mail:hover {
+    background-color: #0F74D1;
+}
+
+.whyus {
+    display: flex;
+    margin-top: 40px;
+    justify-content: center;
+}
+
+.whyus__image {
+    flex-shrink: 0;
 
 }
 
-.managers__card {}
+.whyus__image img {
+    object-fit: contain;
+}
+
+.whyus__content {
+    margin-left: 40px;
+    max-width: 569px;
+}
+
+.whyus__title {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.whyus__text {
+    margin-top: 20px;
+}
+
+.whyus__text p {
+    line-height: 130%;
+}
+
+.advantages {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.advantages__title {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+
+.advantages__items {
+    display: flex;
+    margin: 40px 30px 0 30px;
+    justify-content: space-between;
+}
+
+.advantages__item {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.advantages__image {
+    width: 82px;
+    height: 82px;
+}
+
+.advantages__text {
+    margin-top: 20px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
