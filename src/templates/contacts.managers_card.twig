@@ -1,0 +1,25 @@
+{% macro managers(id, img, name, comments = 0, ratingValue, position, phone,mail) %}
+
+{% import 'form.twig' as form %}
+
+    <div class="managers__card card">
+        <div class="card__image">
+            <a href="/?p=manager"> 
+                <img src="{{ img }}" alt="Фото менеджера">
+            </a>
+        </div>
+        <div class="card__text">
+            <a class="card__title" href="/?p=manager">{{ name }}</a>
+            <div class="card__workmanship">
+                {{form.rating(id, false, ratingValue)}}
+                <a class="card__comments" href="/?p=manager#feedback">{{comments}} отзывов</a>
+            </div>
+            <p class="card__position">{{position}}</p>
+            <div class="card__contact">
+                <a class="card__phone" href="tel:{{phone}}"></a>
+                <a class="card__mail" href="mailto:{{mail}}"></a>
+            </div>
+        </div>
+    </div>
+{% endmacro %}
+

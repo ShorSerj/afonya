@@ -95,6 +95,7 @@
 .card__title {
     font-weight: 500;
     font-size: 16px;
+    width: fit-content;
 }
 
 .card__workmanship {
@@ -129,12 +130,12 @@
 }
 
 .card__phone {
-    background-image: url('../assets/images/manager_call.png');
+    background-image: url('../images/manager_call.png');
 }
 
 .card__mail {
     margin-left: 8px;
-    background-image: url('../assets/images/manager_mail.png');
+    background-image: url('../images/manager_mail.png');
 }
 
 .card__phone:hover,

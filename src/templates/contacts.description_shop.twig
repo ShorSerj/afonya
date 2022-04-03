@@ -1,0 +1,20 @@
+{% macro shop(img, name, address, phones, mail, tags) %}
+    <div class="shop__description">
+                <div class="shop__image">
+                    <img src="{{img}}" alt="Фотография магазина">
+                </div>
+                <div class="shop__info info">
+                    <h3 class="info__title">{{name}}</h3>
+                    <p class="info__address">{{address}}</p>
+                    <div class="info__phones">
+                        {% for phone in phones %}
+                            <a class="info__phone" href="tel:{{phone}}">{{phone}}</a>
+                        {% endfor %}
+                    </div>
+                    <a class="info__mail" href="mailto:{{mail}}">{{mail}}</a>
+                    <div class="info__tags">
+                        <img src="{{tags}}" alt="">
+                    </div>
+                </div>
+            </div>
+{% endmacro %}

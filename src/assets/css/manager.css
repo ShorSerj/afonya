@@ -3,7 +3,7 @@
     background: #FFFFFF;
     margin-top: 20px;
     padding-bottom: 158px;
-    padding-top: 9px;
+    min-height: 100vh;
 }
 
 .manager__card {
@@ -86,22 +86,23 @@
 }
 
 .card__phone {
-    background-image: url('../assets/images/manager_call.png');
+    background-image: url('../images/manager_call.png');
 }
 
 .card__mail {
     margin-left: 8px;
-    background-image: url('../assets/images/manager_mail.png');
+    background-image: url('../images/manager_mail.png');
+}
+
+.card__phone:hover,
+.card__mail:hover {
+    background-color: #0F74D1;
 }
 
 .manager__skils {
     margin-top: 20px;
     line-height: 130%;
     max-width: 657px;
-}
-
-.manager__skils p {
-    margin-bottom: 10px;
 }
 
 .manager__certificates {
@@ -128,7 +129,7 @@
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.8);
-    background-image: url(../assets/images/loop.png);
+    background-image: url('../images/loop.png');
     background-position: center center;
     background-repeat: no-repeat;
 }
@@ -201,69 +202,12 @@
 .fed-form {
     display: flex;
     flex-direction: column;
+    margin-top: 20px;
 }
 
 .fed-form__title {
     font-weight: 500;
     font-size: 20px;
-}
-
-.fed-form__rating {
-    display: flex;
-    align-items: center;
-    font-size: 32px;
-    line-height: 0.75;
-}
-
-.rating__body {
-    position: relative;
-}
-
-.rating__body::before {
-    content: "★★★★★";
-    display: block;
-    color: #CCCCCC;
-}
-
-.rating__active {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    overflow: hidden;
-}
-
-.rating__active::before {
-    content: "★★★★★";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    color: #FFCA28;
-}
-
-.rating__items {
-    display: flex;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-}
-
-.rating__item {
-    flex: 0 0 20%;
-    height: 100%;
-    opacity: 0;
-}
-
-.rating__value {
-    color: #CCCCCC;
-    margin-left: 20px;
-    font-size: 14px;
-    line-height: 1;
 }
 
 .fed-form__body {

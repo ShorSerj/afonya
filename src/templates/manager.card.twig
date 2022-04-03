@@ -1,0 +1,34 @@
+{% macro manager(id, photo, name, position, address, ratingValue, comment = 0, phone, mail, skills) %}
+
+{% import 'form.twig' as form %}
+
+    <div class="manager__card">
+        <div class="manager__photo">
+            <img src="{{photo}}" alt="Фото менеджера">
+        </div>
+        <div class="manager__info">
+            <div class="manager__main-text">
+                <div class="">
+                    <h1 class="manager__name">{{name}}</h1>
+                    <p class="manager__position">{{position}}</p>
+                    <div class="manager__location location">
+                        <div class="location__icon">
+                            <img src="../../assets/images/location.png" alt="Иконка локации магазина">
+                        </div>
+                        <p class="location__address">{{address}}</p>
+                    </div>
+                </div>
+                <div class="manager__social">
+                    {{form.rating(id, false, ratingValue)}}
+                    <a class="manager__comments" href="#feedback">{{comment}} отзывов</a>
+                    <div class="card__contact">
+                        <a class="card__phone" href="tel:{{phone}}"></a>
+                        <a class="card__mail" href="mailto:{{mail}}"></a> 
+                    </div>
+                </div>
+            </div>
+            <p class="manager__skils">{{skills |raw}}</p>
+        </div>
+    </div>
+{% endmacro %}
+
