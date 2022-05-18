@@ -10,24 +10,43 @@
     <link href="../assets/css/reset.css" rel="stylesheet">
     <link href="../assets/css/fonts.css" rel="stylesheet">
     <link href="../assets/css/style.css" rel="stylesheet">
-    <link href="../assets/css/popup.css" rel="stylesheet">
+    <link href="../assets/css/header.css" rel="stylesheet">
+    <link href="../assets/css/user-cabinet.css" rel="stylesheet">
+    <link href="../assets/css/footer.css" rel="stylesheet">
     {% endblock %}
 
 </head>
 
 <body>
-    <main class="contacts-container">
-        {% block content %}
-        {% endblock %}
-    </main>
-
-    <div class="popup">
-        <div class="popup__body">
-            <div class="popup__close">X</div>
-            <div class="popup__content"></div>
+    <header class="header">
+        {% include "header-up.twig" %}
+        {% include "header-down.twig" %}
+    </header>
+    <div class="page">
+        <div class="content container">
+            <main class="products">
+                <img src="../assets/images/main.jpg" alt="">
+            </main>
+            <div class="lside">
+                <img src="../assets/images/lside.jpg" alt="">
+            </div>
+            <div class="rside">
+                <img src="../assets/images/rside.jpg" alt="">
+            </div>
         </div>
     </div>
+    <footer class="footer-wrapper">
+        {% include "footer.twig" %}
+    </footer>
+    <a href="#" class="scroll-up">
+        <span>Наверх</span>
+    </a>
+    <a class="request-call" href="#">
+        <img src="../assets/images/rquest-call.svg" alt="заказать звонок">
+    </a>
     {% block javascript %}
+    <script type="module" src="../assets/js/menu.js"></script>
+    <script type="module" src="../assets/js/upButton.js"></script>
     {% endblock %}
 </body>
 

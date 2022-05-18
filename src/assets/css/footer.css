@@ -1,0 +1,146 @@
+.footer-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 18% 64% 18%;
+    padding: 16px 0;
+}
+
+@media (max-width: 1120px) {
+    .footer {
+        grid-template-columns: 18% 62% 20%;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        grid-template-columns: 23vw 54vw 20vw;
+        padding: 0 1vw;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 560px) {
+    .footer {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+}
+
+.footer__icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 560px) {
+    .footer__icons {
+        margin: 20px 0;
+    }
+}
+
+.footer__logo {
+    margin-bottom: 10px;
+}
+
+.footer__social {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.footer__icon {
+    width: 20px;
+    height: 20px;
+}
+
+.footer__icon_youtube {
+    width: 25px;
+    height: 18px;
+}
+
+.footer__nav {
+    margin-left: 40px;
+    margin-right: 22px;
+}
+
+.footer .nav {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(5, max-content);
+    column-gap: 40px;
+    row-gap: 14px;
+}
+
+.footer .nav .user {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+@media (max-width: 1350px) {
+    .footer .nav {
+        column-gap: 30px;
+    }
+}
+
+@media (max-width: 1250px) {
+    .footer .nav {
+        grid-template-columns: repeat(4, max-content);
+    }
+}
+
+@media (max-width: 1120px) {
+
+    .footer .nav {
+        grid-template-columns: repeat(3, max-content);
+    }
+}
+
+@media (max-width: 768px) {
+    .footer .nav {
+        grid-template-columns: repeat(2, max-content);
+    }
+}
+
+@media (max-width: 560px) {
+    .footer .nav {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        margin: 20px 0;
+        justify-items: center;
+    }
+}
+
+.footer .nav__item {
+    white-space: nowrap;
+}
+
+.footer .nav__item_bold a {
+    font-weight: 500;
+}
+
+.footer .nav__item a:hover {
+    color: #0F74D1;
+}
+
+.footer__info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 10px;
+    line-height: 110%;
+    text-align: right;
+    color: #B2B2B2;
+}
+
+@media (max-width: 560px) {
+    .footer__info {
+        display: block;
+        text-align: center;
+    }
+}
